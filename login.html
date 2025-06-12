@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartBite - Login</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/animations.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">SmartBite</div>
+        <div class="nav-links">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="menu.html" class="nav-link">Menu</a>
+            <a href="cart.html" class="nav-link">Cart</a>
+            <!-- <a href="orders.html" class="nav-link">Orders</a> -->
+            <a href="login.html" class="nav-link active">Login</a>
+        </div>
+    </nav>
+
+    <main class="login-section">
+        <div class="login-container">
+            <h2>Welcome Back</h2>
+            <p>Login to order your favorite food</p>
+            <form class="login-form" id="login-form">
+                <div class="form-group">
+                    <input type="email" id="email" required>
+                    <label for="email">Email</label>
+                </div>
+                <div class="form-group">
+                    <input type="password" id="password" required>
+                    <label for="password">Password</label>
+                </div>
+                <div class="form-options">
+                    <label class="remember-me">
+                        <input type="checkbox">
+                        <span>Remember me</span>
+                    </label>
+                    <a href="#" class="forgot-password">Forgot Password?</a>
+                </div>
+                <button type="submit" class="login-button">Login</button>
+                <p class="signup-text">Don't have an account? <a href="#">Sign up</a></p>
+            </form>
+        </div>
+    </main>
+
+    <script src="js/navigation.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/auth.js"></script>
+</body>
+</html>

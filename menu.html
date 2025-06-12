@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartBite - Menu</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/animations.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">SmartBite</div>
+        <div class="nav-links">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="menu.html" class="nav-link active">Menu</a>
+            <a href="cart.html" class="nav-link">Cart</a>
+            <!-- <a href="orders.html" class="nav-link">Orders</a> -->
+            <a href="login.html" class="nav-link">Login</a>
+        </div>
+    </nav>
+
+    <main class="menu-section">
+        <h1>Our Menu</h1>
+        <div class="menu-grid">
+            <div class="menu-item" data-id="1" data-name="Special Biriyani" data-price="1111" data-image="pictures/biriany.jpg">
+                <img src="pictures/biriany.jpg" alt="Biriyani">
+                <h3>Special Biriyani</h3>
+                <p>Aromatic rice dish with tender meat and spices</p>
+                <span class="price">₹ 1111</span>
+                <button class="add-to-cart" onclick="addToCart(this)">Add to Cart</button>
+            </div>
+
+            <div class="menu-item" data-id="2" data-name="Gourmet Burger" data-price="854.42" data-image="pictures/burger.jpg">
+                <img src="pictures/burger.jpg" alt="Burger">
+                <h3>Gourmet Burger</h3>
+                <p>Juicy beef patty with fresh vegetables and special sauce</p>
+                <span class="price">₹ 854.42</span>
+                <button class="add-to-cart" onclick="addToCart(this)">Add to Cart</button>
+            </div>
+
+            <div class="menu-item" data-id="3" data-name="Special Fried Rice" data-price="939.95" data-image="pictures/friedrice.jpg">
+                <img src="pictures/friedrice.jpg" alt="Fried Rice">
+                <h3>Special Fried Rice</h3>
+                <p>Wok-fried rice with vegetables and choice of protein</p>
+                <span class="price">₹ 939.95</span>
+                <button class="add-to-cart" onclick="addToCart(this)">Add to Cart</button>
+            </div>
+
+            <div class="menu-item" data-id="4" data-name="Misti Doi" data-price="65" data-image="pictures/mistidoi.jpg">
+                <img src="pictures/mistidoi.jpg" alt="Misti Doi">
+                <h3>Misti Doi</h3>
+                <p>Traditional Bengali sweet yogurt dessert</p>
+                <span class="price">₹ 65</span>
+                <button class="add-to-cart" onclick="addToCart(this)">Add to Cart</button>
+            </div>
+
+            <div class="menu-item" data-id="5" data-name="Artisan Pizza" data-price="1282.06" data-image="pictures/pizza.jpeg">
+                <img src="pictures/pizza.jpeg" alt="Pizza">
+                <h3>Artisan Pizza</h3>
+                <p>Hand-tossed pizza with premium toppings</p>
+                <span class="price">₹ 1282.06</span>
+                <button class="add-to-cart" onclick="addToCart(this)">Add to Cart</button>
+            </div>
+
+            <div class="menu-item" data-id="6" data-name="Club Sandwich" data-price="768.90" data-image="pictures/sandwich.jpg">
+                <img src="pictures/sandwich.jpg" alt="Sandwich">
+                <h3>Club Sandwich</h3>
+                <p>Triple-decker sandwich with fresh ingredients</p>
+                <span class="price">₹ 768.90</span>
+                <button class="add-to-cart" onclick="addToCart(this)">Add to Cart</button>
+            </div>
+        </div>
+    </main>
+
+    <script src="js/navigation.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/cart.js"></script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartBite - Cart</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/animations.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">SmartBite</div>
+        <div class="nav-links">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="menu.html" class="nav-link">Menu</a>
+            <a href="cart.html" class="nav-link active">Cart</a>
+            <!-- <a href="orders.html" class="nav-link">Orders</a> -->
+            <a href="login.html" class="nav-link">Login</a>
+        </div>
+    </nav>
+
+    <main class="cart-section background-animated">
+        <div class="cart-container">
+            <h2>Your Cart</h2>
+            <div class="cart-items" id="cartItems">
+                <!-- Cart items will be dynamically added here with this structure:
+                <div class="cart-item" data-id="itemId">
+                    <img src="itemImage" alt="itemName">
+                    <div class="item-details">
+                        <h3>itemName</h3>
+                        <p class="item-price">₹price</p>
+                        <div class="quantity-controls">
+                            <button class="quantity-btn minus">-</button>
+                            <span class="quantity">1</span>
+                            <button class="quantity-btn plus">+</button>
+                        </div>
+                        <p class="item-subtotal">₹subtotal</p>
+                    </div>
+                    <button class="remove-item">Remove</button>
+                </div>
+                -->
+            </div>
+            <div class="cart-summary">
+                <div class="subtotal">Subtotal: ₹<span id="subtotal">0.00</span></div>
+                <div class="tax">Tax (1.4%): ₹<span id="tax">0.00</span></div>
+                <div class="total">Total: ₹<span id="total">0.00</span></div>
+                <button class="checkout-button" onclick="checkout()">Proceed to Checkout</button>
+            </div>
+        </div>
+    </main>
+
+    <script src="js/navigation.js"></script>
+    <script src="js/cart.js"></script>
+</body>
+</html>
